@@ -1,0 +1,343 @@
+header, main, nav, footer, section, article, figure, figcaption,
+aside { display: block; }  /* needed for compatibility with older browsers */
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url(fonts/BG_reg.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "BG Light";
+  src: url(fonts/BG_light.otf) format("opentype");
+}
+
+.centered
+{
+	text-align: center;
+	align-items: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.italic {
+	font-style: italic;
+}
+
+body
+{
+background: #FAFAFA;
+margin: 0px auto 0px auto;
+width: 80%;
+padding-top: 30px;
+}
+
+main
+{
+padding: 0px 0px 0px 0px; 
+color:#F9745A; 
+width: 85%;
+margin: 0px auto 0px auto;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+nav {
+	float: right;
+	letter-spacing: 2px;
+	margin: 35px 0px 0px 0px;
+}
+
+a {
+font-family: Courier, monospace;
+text-decoration: none;
+}
+
+p {
+	font-size: 10pt;
+	color: #F9745A;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+h1 {
+color: #46636B;
+letter-spacing: 3px;
+font-size: 18pt;
+text-align: left;
+padding-top:30px;
+line-height: 30px;
+text-transform: uppercase;
+} 
+
+h2 {
+color: #46636B;
+letter-spacing: 3px;
+font-size: 18pt;
+text-align: center;
+padding-top:30px;
+line-height: 30px;
+text-transform: uppercase;
+} 
+
+h3 {
+font-weight: lighter;
+color: #707070;
+letter-spacing: 1px;
+font-size: 14pt;
+text-align: left;
+line-height: 25px;
+}
+
+h4 {
+color: #46636B;
+letter-spacing: 3px;
+font-size: 12pt;
+text-align: center;
+padding-top:30px;
+line-height: 30px;
+text-transform: uppercase;
+} 
+
+footer
+{
+text-align: center;
+margin: 0px auto 0px auto;
+}
+
+
+#tagline
+{
+font-size: 8pt;
+color: #939598;
+letter-spacing: 0px;
+font-family: Courier, monospace;
+}
+
+.logo {
+	margin: 20px;
+	width: 350px;
+	float: left;
+	/* position: relative;
+	display:inline; */
+}
+
+.nav {
+	padding-right: 30px;
+	color: #F9745A;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.info1 {
+	margin: 140px 0px 50px 0px;
+}
+
+/* TABLE CSS */
+
+table {
+border-collapse: collapse;
+width: 70%;
+margin: 0px auto 30px auto;
+}
+
+th {
+ border: 2px solid #919191;
+ text-align: center;
+ padding: 15px;
+ font-size: 18px;
+ letter-spacing: 2px;
+ }
+
+td {
+ border: 2px solid #919191;
+ text-align: left;
+ padding: 8px;
+ font-size: 14px;
+ letter-spacing: 1px;
+}
+
+/* FORM CSS */
+
+label {
+	float: left;
+	display: block;
+	width: 8em;
+	padding-right: 6em;
+	text-transform: uppercase;
+	font-size: 10pt;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+input {
+	display: block;
+	margin-bottom: 2em;
+	width: 25em;
+	height: 2em;
+}
+
+textarea {
+	display: block;
+	margin-bottom: 2em;
+	width: 25em;
+}
+
+
+#mySubmit {
+	margin-left: 17em;
+	width: 10em;
+}
+
+form {
+	margin-top:55px;
+}
+
+/* GRID CSS */
+
+.grid-container-1 {
+	margin: 140px 0px 50px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-column-gap: 35px;
+}
+
+.heading {
+	grid-row: 1 / 4;
+	grid-column: 1;
+	max-width: 100%;
+	max-height: 100%;
+	/*display: block;*/
+}
+
+.heading2 {
+	grid-row: 1;
+	grid-column: 2;
+	max-height: 100%;
+	max-width: 100%;
+	/*display: block;*/
+}
+
+.greeting {
+	grid-row: 2/3;
+	grid-column: 2;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.grid-container-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-column-gap: 35px;
+	margin: 70px 0px 70px 0px;
+}
+
+#column-1 {
+	grid-row: 1 / 2;
+	grid-column: 1;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#column-2 {
+	grid-row: 1 / 2;
+	grid-column: 2;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#column-3 {
+	grid-row: 1 / 2;
+	grid-column: 3;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#descr-1 {
+	grid-row: 3;
+	grid-column: 1;
+}
+
+#descr-2 {
+	grid-row: 3;
+	grid-column: 2;
+}
+
+#descr-3 {
+	grid-row: 3;
+	grid-column: 3;
+}
+
+.date {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8pt;
+	color: #F9745A;
+	text-align: center;
+	font-style: italic;	
+	letter-spacing: 2px;
+}
+
+
+.places {
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* USABILITY CODE */
+
+@media only screen and (max-width: 1024px) {
+
+
+.nav {
+width: auto;
+padding: 0.5em;
+}
+
+main {
+padding: 1em;
+margin-left: 0px;
+font-size: 90%;
+width: auto;
+margin: 0px;
+}
+
+.logo {
+	margin: auto;
+}
+
+}
+
+@media only all and (max-width: 768px) {
+
+.logo {
+	margin: auto;
+	width:80%;
+}
+
+.nav {
+width: auto;
+padding: 0.5em;
+text-align: center;
+}
+
+main {
+	padding: 0.1em 0.6em 0.1em 0.4em;
+	width: auto;
+	margin: auto;
+}
+}
+
+.heading2 {
+	display: none;
+}
+
+.heading {
+	display: none;
+}
+
+} 
