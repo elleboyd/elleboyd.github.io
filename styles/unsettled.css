@@ -135,12 +135,65 @@ font-family: Courier, monospace;
 	margin: 140px 0px 50px 0px;
 }
 
+/* IMAGE GALLERY CSS */
+/*
+.gallery {
+  margin: 0px 0px 20px  0px;
+  width: auto;
+}*/
+
+#gallery {
+	position: relative;
+}
+
+figure {
+	position: absolute;
+	margin-left: 500px;
+	opacity: .25;
+}
+
+
+#gallery img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+	width: 200px;
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	float: left;
+	padding: 10px;
+}
+
+#gallery span {
+	position:absolute;
+	left: -1000px;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span { position: absolute; top: 16px; left: 320px; text-align: center; opacity: 1; }
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	grid-column-gap: 35px;
+	margin: 70px 0px 70px 0px;
+
+}
+
+
 /* TABLE CSS */
 
 table {
 border-collapse: collapse;
 width: 70%;
-margin: 0px auto 30px auto;
+margin: 30px auto 30px auto;
 }
 
 th {
@@ -154,7 +207,7 @@ th {
 td {
  border: 2px solid #919191;
  text-align: left;
- padding: 8px;
+ padding: 15px;
  font-size: 14px;
  letter-spacing: 1px;
 }
@@ -231,7 +284,7 @@ form {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
 	grid-column-gap: 35px;
-	margin: 70px 0px 70px 0px;
+	margin: 70px 0px 50px 0px;
 }
 
 #column-1 {
@@ -286,6 +339,7 @@ form {
 	font-style: italic;
 }
 
+
 /* USABILITY CODE */
 
 @media only screen and (max-width: 1024px) {
@@ -305,12 +359,12 @@ margin: 0px;
 }
 
 .logo {
-	margin: auto;
+	margin: auto; 
 }
 
 }
 
-@media only all and (max-width: 768px) {
+@media only all and (max-width: 768px) { 
 
 .logo {
 	margin: auto;
