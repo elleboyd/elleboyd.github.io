@@ -107,7 +107,6 @@ text-align: center;
 margin: 0px auto 0px auto;
 }
 
-
 #tagline
 {
 font-size: 8pt;
@@ -135,10 +134,23 @@ font-family: Courier, monospace;
 	margin: 140px 0px 50px 0px;
 }
 
+/* SOCIAL MEDIA ICONS CSS */
+
+.social-media-icons {
+	margin: 0px auto 60px auto;
+}
+
+.social-media-icons img {
+	display: block;
+	width: 4%;
+	margin: auto;
+}
+
+
 /* IMAGE GALLERY CSS */
 
 .gallery {
-  margin: 0px 0px 20px  0px;
+  margin: 0px 0px 20px 0px;
   width: auto;
 }
 
@@ -152,8 +164,7 @@ font-family: Courier, monospace;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto;
 	grid-column-gap: 35px;
-	margin: 70px 0px 70px 0px;
-
+	margin: 70px 0px 50px 0px;
 }
 
 
