@@ -27,6 +27,7 @@ aside { display: block; }  /* needed for compatibility with older browsers */
 
 .bold {
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 
 body
@@ -50,11 +51,19 @@ nav {
 	float: right;
 	letter-spacing: 2px;
 	margin: 35px 0px 0px 0px;
+	font-family: Courier, monospace;
 }
 
 a {
-font-family: Courier, monospace;
 text-decoration: none;
+}
+
+a:visited {
+	color: #F9745A;
+}
+
+a:link {
+	color: #F9745A;
 }
 
 p {
@@ -113,7 +122,6 @@ margin: 0px auto 0px auto;
 li {
 	line-height: 30px;
 	color: #707070;
-
 }
 
 #tagline
@@ -199,6 +207,11 @@ td {
  padding: 15px;
  font-size: 14px;
  letter-spacing: 1px;
+}
+
+.inactive {
+ color: #939598;
+}
 }
 
 /* FORM CSS */
@@ -305,6 +318,8 @@ form {
 #descr-2 {
 	grid-row: 3;
 	grid-column: 2;
+	font-family: 'Montserrat', sans-serif;
+	color: #F9745A;
 }
 
 #descr-3 {
@@ -328,9 +343,9 @@ form {
 	font-style: italic;
 }
 
-/* BUYING PAGE GRID CSS */
+/* BUYING + TRIP PAGES GRID CSS */
 
-.buy-container-1 {
+.grid-container-3 {
 	margin: 0px 0px 20px 0px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -338,21 +353,21 @@ form {
 	grid-column-gap: 35px;
 }
 
-.buyinfo-left {
+.info-left {
 	grid-row: 1/2;
 	grid-column: 2;
 	max-height: 100%;
 	max-width: 100%;
 }
 
-.buyinfo-right {
+.info-right {
 	grid-row: 1/2;
 	grid-column: 1;
 	max-height: 100%;
 	max-width: 100%;
 }
 
-.buyimage-left {
+.image-left {
 	grid-row: 1 / 3;
 	grid-column: 1;
 	max-width: 90%;
@@ -360,7 +375,7 @@ form {
 	margin-top: 130px;
 }
 
-.buyimage-right {
+.image-right {
 	grid-row: 1 / 3;
 	grid-column: 2;
 	max-width: 100%;
@@ -368,11 +383,26 @@ form {
 	margin-top: 130px;
 }
 
-#buyheading {
+.heading-3 {
 	margin: 140px 0px 60px 0px;
 	text-align: center;
 }
 
+.heading-4 {
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+}
+
+.paragraph {
+	line-height: 30px;
+	color: #707070;
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 11pt;
+	font-weight: normal;
+	letter-spacing: 0px;
+	margin-bottom: 10px;
+}
 
 /* USABILITY CODE */
 
