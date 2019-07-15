@@ -295,7 +295,6 @@ form {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto 1fr auto;
 	grid-column-gap: 35px;
-	width: 100%
 }
 
 .heading {
